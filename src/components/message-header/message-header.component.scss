@@ -1,0 +1,42 @@
+@import '../../theme';
+
+.message-header {
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  line-height: 30px;
+  border-bottom: 1px solid $messageBorder;
+
+  .rank {
+    display: flex;
+    flex-direction: row;
+    margin-inline-end: 20px;
+    
+    .star {
+      margin: 0 3px;
+      font-size: 18px;
+      color: #228B22;
+      font-weight: bold;
+      
+      &::after {
+        content: '☆';
+      }
+
+      &.full {
+        &::after {
+          content: '★';
+        } 
+      }
+    }
+  }
+}
+
+.message-head {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

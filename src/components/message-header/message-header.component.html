@@ -1,0 +1,15 @@
+<div class="message-head">
+  <div class="message-header">
+    <div #rank class="rank">
+      @for(s of NUM_OF_STARS_ARRY; track s;) {
+      <div
+        class="star"
+        [ngClass]="{ full: message.messageData.rank > s }"
+        (mouseenter)="onStarEnter(rank, s)"
+        (mouseout)="onStarOut(rank, s)"
+      ></div>
+      }
+    </div>
+    {{ message.messageData.timestamp | date : 'dd/MM/yyyy HH:mm' }}
+  </div>
+</div>

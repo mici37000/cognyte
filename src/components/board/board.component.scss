@@ -1,0 +1,21 @@
+@import '../../theme';
+
+.board-container {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $boardBackground;
+}
+
+.msg-container {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid $messageBorder;
+  background: $messageBackground;
+}

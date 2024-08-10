@@ -1,0 +1,9 @@
+<div class="message-body-container">
+  <app-user-info [userInfo]="message.user"></app-user-info>
+  <div class="message-content-container">
+    <app-message-content
+      [messageData]="message.messageData"
+    ></app-message-content>
+    <app-message-footer [message]="message"></app-message-footer>
+  </div>
+</div>

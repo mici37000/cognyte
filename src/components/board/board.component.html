@@ -1,0 +1,9 @@
+<div class="board-container">
+  <div
+    class="msg-container"
+    *ngFor="let message of messages; trackBy: trackByMessageId"
+  >
+    <app-message-header [message]="message"></app-message-header>
+    <app-message-body [message]="message"></app-message-body>
+  </div>
+</div>

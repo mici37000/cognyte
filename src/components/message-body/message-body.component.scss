@@ -1,0 +1,10 @@
+.message-body-container {
+  flex-direction: row;
+  display: flex;
+}
+
+.message-content-container {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}

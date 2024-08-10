@@ -1,0 +1,9 @@
+<div class="user-info-container">
+  <div class="user-info">
+    <div class="user-name">{{ userInfo.name }}</div>
+    <app-user-avatar [avatar]="userInfo.avatar"></app-user-avatar>
+    <div>Messages: {{ userInfo.messagesAmount }}</div>
+    <div>Rank: {{ userInfo.rank }}</div>
+    <div>Join: {{ userInfo.joinDate | date : 'dd.MM.yyyy' }}</div>
+  </div>
+</div>
